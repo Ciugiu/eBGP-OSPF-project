@@ -33,6 +33,7 @@ as well as:
 - Redundancy
 
 #### Configuration for Router R1:
+```
 R1#
 R1#**conf t**
 R1(config)#**hostname R1**
@@ -72,7 +73,11 @@ R1(config-router)#**bgp router-id 10.1.1.4**
 R1(config-router)#**end**
 R1#**wr**
 R1#
+```
+
+
 #### Configuration for Router R2:
+```
 R2#
 R2#**conf t**
 R2(config)#**hostname R2**
@@ -112,8 +117,10 @@ R2(config-router)#**bgp router-id 10.1.2.4**
 R2(config-router)#**end**
 R2#**wr**
 R2#
+```
 
 #### Configuration for Router R3:
+```
 R3#
 R3#**conf t**
 R3(config)#**hostname R3**
@@ -172,7 +179,10 @@ R3(config-router)#**redistribute bgp 3 subnets metric 1000**
 R3(config-router)#**end**
 R3#**wr**
 R3#
+```
+
 #### Configuration for Router R4:
+```
 R4#
 R4#**conf t**
 R4(config)#**hostname R4**
@@ -213,7 +223,10 @@ R4(config-router)#**bgp router-id 10.1.4.4**
 R4(config-router)#**end**
 R4#**wr**
 R4#
+```
+
 #### Configuration for Router R5:
+```
 R5#
 R5#**conf t**
 R5(config)#**hostname R5**
@@ -236,6 +249,8 @@ R5(config-router)#**router-id 5.5.5.5**
 R5(config-router)#**end**
 R5#**wr**
 R5#
+```
+
 ### Testing and Verification
 
 Once all configurations are completed, the following tests should be conducted to ensure full connectivity between all routers and loopback interfaces:
